@@ -7,25 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <main>
         <div class="mainContent">
-            <h1 class="mainContent__city">TEST</h1>
+            <h1 class="mainContent__city">Wpisz nazwę miasta</h1>
             <div class="mainContent__box">
-                <input type="text">
-                <button>Akceptuj</button>
+                <input type="text" class="mainContent__input">
+                <button class="mainContent__btn">Akceptuj</button>
             </div>
-            <div class="mainContent__box">zdjęcie</div>
+            <div class="mainContent__box">
+                <img src="./img/unknown.png" alt="picture" id="picture">
+            </div>
             <div class="mainContent__titles">
                 <h3>Pogoda</h3>
                 <h3>Temperatura</h3>
                 <h3>Wilgotność</h3>
             </div>
-            <div></div>
+            <div class="mainContent__values">
+                <h4 id="weather"></h4>
+                <h4 id="temp"></h4>
+                <h4 id="hum"></h4>
+            </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
